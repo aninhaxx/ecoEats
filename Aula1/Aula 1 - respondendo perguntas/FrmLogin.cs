@@ -21,5 +21,45 @@ namespace Aula_1___respondendo_perguntas
         {
 
         }
+
+        private void btnLogar_Click(object sender, EventArgs e)
+        {
+            string documento = txtCPF_CNPJ.Text;
+            string senha = txtSenha.Text;
+            if (documento =="" || senha=="")
+            {
+               
+                MessageBox.Show("Preencha todos os campos!!");
+                return;
+            }
+        }
+
+        private void lblMostarEsconder_Click(object sender, EventArgs e)
+        {
+            bool mostrar = txtSenha.UseSystemPasswordChar;
+            if (mostrar == true)
+            {
+                txtSenha.UseSystemPasswordChar = false;
+                lblMostarEsconder.Text = "Esconder senha";
+                mostrar = false;
+            }
+            else if (mostrar==false)
+            {
+                txtSenha.UseSystemPasswordChar = true;
+                lblMostarEsconder.Text = "Mostrar senha";
+            }
+        }
+
+        private void btnRedefinirSenha_Click(object sender, EventArgs e)
+        {
+            // Redireciona para a tela da ana
+            MessageBox.Show("Tela em construção!");
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

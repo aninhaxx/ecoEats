@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +88,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animal Crossing Leaf - K Hook Creations.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aesthetic Sticker - Aesthetic - Discover &amp; Share GIFs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Face Smile Sticker by odsanyu for iOS &amp; Android _ GIPHY.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
