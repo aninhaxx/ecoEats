@@ -108,5 +108,13 @@ namespace Aula_1___respondendo_perguntas
                 lblResposta.Text = "Usuário não aprovado";
             }
         }
+
+        private void btnJessica_Click(object sender, EventArgs e)
+        {
+            Form frmJessica = new frmJessica();
+            frmJessica.WindowState = FormWindowState.Normal;
+            frmJessica.Show();
+
+        }
     }
 }

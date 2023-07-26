@@ -52,6 +52,7 @@ namespace Aula_1___respondendo_perguntas
             this.label3 = new System.Windows.Forms.Label();
             this.btnResultado = new System.Windows.Forms.Button();
             this.lblResposta = new System.Windows.Forms.Label();
+            this.btnJessica = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownF)).BeginInit();
             this.SuspendLayout();
@@ -287,12 +288,23 @@ namespace Aula_1___respondendo_perguntas
             this.lblResposta.TabIndex = 22;
             this.lblResposta.Text = "resultado:";
             // 
+            // btnJessica
+            // 
+            this.btnJessica.Location = new System.Drawing.Point(1170, 427);
+            this.btnJessica.Name = "btnJessica";
+            this.btnJessica.Size = new System.Drawing.Size(75, 23);
+            this.btnJessica.TabIndex = 23;
+            this.btnJessica.Text = "Jéssica";
+            this.btnJessica.UseVisualStyleBackColor = true;
+            this.btnJessica.Click += new System.EventHandler(this.btnJessica_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightYellow;
             this.ClientSize = new System.Drawing.Size(1420, 755);
+            this.Controls.Add(this.btnJessica);
             this.Controls.Add(this.lblResposta);
             this.Controls.Add(this.btnResultado);
             this.Controls.Add(this.label3);
@@ -352,6 +364,7 @@ namespace Aula_1___respondendo_perguntas
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnResultado;
         private System.Windows.Forms.Label lblResposta;
+        private System.Windows.Forms.Button btnJessica;
     }
 }
 
