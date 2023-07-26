@@ -44,6 +44,7 @@ namespace Aula_1___respondendo_perguntas
                 "Código:" + Código + "\n" +
                 "DataDeValidade:" + DataDeValidade + "\n" +
                 "Tipodepagamento:" + Tipodopagamento);
+
         }
     }
 }
