@@ -63,7 +63,7 @@ namespace Aula_1___respondendo_perguntas
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl1.Location = new System.Drawing.Point(12, 9);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(243, 16);
+            this.lbl1.Size = new System.Drawing.Size(244, 16);
             this.lbl1.TabIndex = 0;
             this.lbl1.Text = "Definição do objetivo do sistema: ";
             // 
@@ -73,7 +73,7 @@ namespace Aula_1___respondendo_perguntas
             this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl3.Location = new System.Drawing.Point(12, 53);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(167, 16);
+            this.lbl3.Size = new System.Drawing.Size(168, 16);
             this.lbl3.TabIndex = 1;
             this.lbl3.Text = "Requisistos funcionais:";
             // 
@@ -83,7 +83,7 @@ namespace Aula_1___respondendo_perguntas
             this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl2.Location = new System.Drawing.Point(253, 9);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(66, 16);
+            this.lbl2.Size = new System.Drawing.Size(67, 16);
             this.lbl2.TabIndex = 2;
             this.lbl2.Text = "Resposta";
             // 
@@ -93,7 +93,7 @@ namespace Aula_1___respondendo_perguntas
             this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl4.Location = new System.Drawing.Point(184, 53);
             this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(66, 16);
+            this.lbl4.Size = new System.Drawing.Size(67, 16);
             this.lbl4.TabIndex = 3;
             this.lbl4.Text = "Resposta";
             this.lbl4.Click += new System.EventHandler(this.lbl4_Click);
@@ -104,7 +104,7 @@ namespace Aula_1___respondendo_perguntas
             this.lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl5.Location = new System.Drawing.Point(12, 166);
             this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(189, 16);
+            this.lbl5.Size = new System.Drawing.Size(190, 16);
             this.lbl5.TabIndex = 4;
             this.lbl5.Text = "Requisitos não funcionais:";
             // 
@@ -114,7 +114,7 @@ namespace Aula_1___respondendo_perguntas
             this.lbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl6.Location = new System.Drawing.Point(208, 166);
             this.lbl6.Name = "lbl6";
-            this.lbl6.Size = new System.Drawing.Size(66, 16);
+            this.lbl6.Size = new System.Drawing.Size(67, 16);
             this.lbl6.TabIndex = 5;
             this.lbl6.Text = "Resposta";
             // 
@@ -122,7 +122,7 @@ namespace Aula_1___respondendo_perguntas
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(316, 412);
+            this.panel1.Location = new System.Drawing.Point(634, 399);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(460, 10);
             this.panel1.TabIndex = 6;
@@ -131,7 +131,7 @@ namespace Aula_1___respondendo_perguntas
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(536, 239);
+            this.panel2.Location = new System.Drawing.Point(850, 239);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 389);
             this.panel2.TabIndex = 7;
@@ -140,7 +140,7 @@ namespace Aula_1___respondendo_perguntas
             // 
             this.lblForça.AutoSize = true;
             this.lblForça.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblForça.Location = new System.Drawing.Point(388, 239);
+            this.lblForça.Location = new System.Drawing.Point(893, 239);
             this.lblForça.Name = "lblForça";
             this.lblForça.Size = new System.Drawing.Size(55, 20);
             this.lblForça.TabIndex = 8;
@@ -150,7 +150,7 @@ namespace Aula_1___respondendo_perguntas
             // 
             this.lblAmeaças.AutoSize = true;
             this.lblAmeaças.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmeaças.Location = new System.Drawing.Point(601, 441);
+            this.lblAmeaças.Location = new System.Drawing.Point(893, 412);
             this.lblAmeaças.Name = "lblAmeaças";
             this.lblAmeaças.Size = new System.Drawing.Size(83, 20);
             this.lblAmeaças.TabIndex = 9;
@@ -160,7 +160,7 @@ namespace Aula_1___respondendo_perguntas
             // 
             this.lblOportunidades.AutoSize = true;
             this.lblOportunidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOportunidades.Location = new System.Drawing.Point(369, 441);
+            this.lblOportunidades.Location = new System.Drawing.Point(674, 412);
             this.lblOportunidades.Name = "lblOportunidades";
             this.lblOportunidades.Size = new System.Drawing.Size(127, 20);
             this.lblOportunidades.TabIndex = 10;
@@ -170,7 +170,7 @@ namespace Aula_1___respondendo_perguntas
             // 
             this.lblFraquezas.AutoSize = true;
             this.lblFraquezas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFraquezas.Location = new System.Drawing.Point(601, 239);
+            this.lblFraquezas.Location = new System.Drawing.Point(707, 239);
             this.lblFraquezas.Name = "lblFraquezas";
             this.lblFraquezas.Size = new System.Drawing.Size(94, 20);
             this.lblFraquezas.TabIndex = 11;
@@ -180,9 +180,9 @@ namespace Aula_1___respondendo_perguntas
             // 
             this.lblForças.AutoSize = true;
             this.lblForças.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblForças.Location = new System.Drawing.Point(347, 318);
+            this.lblForças.Location = new System.Drawing.Point(880, 318);
             this.lblForças.Name = "lblForças";
-            this.lblForças.Size = new System.Drawing.Size(38, 16);
+            this.lblForças.Size = new System.Drawing.Size(39, 16);
             this.lblForças.TabIndex = 12;
             this.lblForças.Text = "texto.";
             // 
@@ -190,9 +190,9 @@ namespace Aula_1___respondendo_perguntas
             // 
             this.lblO.AutoSize = true;
             this.lblO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblO.Location = new System.Drawing.Point(347, 502);
+            this.lblO.Location = new System.Drawing.Point(692, 485);
             this.lblO.Name = "lblO";
-            this.lblO.Size = new System.Drawing.Size(38, 16);
+            this.lblO.Size = new System.Drawing.Size(39, 16);
             this.lblO.TabIndex = 13;
             this.lblO.Text = "texto.";
             this.lblO.Click += new System.EventHandler(this.lblO_Click);
@@ -201,9 +201,9 @@ namespace Aula_1___respondendo_perguntas
             // 
             this.lblF.AutoSize = true;
             this.lblF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblF.Location = new System.Drawing.Point(574, 318);
+            this.lblF.Location = new System.Drawing.Point(664, 318);
             this.lblF.Name = "lblF";
-            this.lblF.Size = new System.Drawing.Size(38, 16);
+            this.lblF.Size = new System.Drawing.Size(39, 16);
             this.lblF.TabIndex = 14;
             this.lblF.Text = "texto.";
             this.lblF.Click += new System.EventHandler(this.lblF_Click);
@@ -212,16 +212,16 @@ namespace Aula_1___respondendo_perguntas
             // 
             this.lblA.AutoSize = true;
             this.lblA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblA.Location = new System.Drawing.Point(574, 502);
+            this.lblA.Location = new System.Drawing.Point(880, 501);
             this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(38, 16);
+            this.lblA.Size = new System.Drawing.Size(39, 16);
             this.lblA.TabIndex = 15;
             this.lblA.Text = "texto.";
             // 
             // lblAPIs
             // 
             this.lblAPIs.AutoSize = true;
-            this.lblAPIs.Location = new System.Drawing.Point(37, 504);
+            this.lblAPIs.Location = new System.Drawing.Point(35, 501);
             this.lblAPIs.Name = "lblAPIs";
             this.lblAPIs.Size = new System.Drawing.Size(32, 13);
             this.lblAPIs.TabIndex = 16;
@@ -293,7 +293,7 @@ namespace Aula_1___respondendo_perguntas
             this.btnAnaC.BackColor = System.Drawing.Color.Green;
             this.btnAnaC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAnaC.ForeColor = System.Drawing.Color.Black;
-            this.btnAnaC.Location = new System.Drawing.Point(940, 438);
+            this.btnAnaC.Location = new System.Drawing.Point(1155, 352);
             this.btnAnaC.Name = "btnAnaC";
             this.btnAnaC.Size = new System.Drawing.Size(98, 57);
             this.btnAnaC.TabIndex = 23;

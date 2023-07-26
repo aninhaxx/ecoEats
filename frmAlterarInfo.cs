@@ -38,6 +38,16 @@ namespace Aula_1___respondendo_perguntas
 
             string confirmasenha = lblConfirm.Text;
 
+           MessageBox.Show("Número de vericação enviado por email");
+            if (rbtnEmail.Checked == true)
+            {
+                confirmação = "Email";
+            }
+            else MessageBox.Show("Número de verificação enviado por SMS");
+            {
+                confirmação = "Celular";
+
+            }
 
 
         }
