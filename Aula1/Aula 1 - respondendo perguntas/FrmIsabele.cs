@@ -30,13 +30,18 @@ namespace Aula_1___respondendo_perguntas
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+
+
+            //estou declarando as variaveis para elas ficarem salvas no Botão salvar
             String Validade = DTPValidade.Value.ToString("yyyy-MM-dd");
             String Fabricacao = DTPFabricacao.Value.ToString("yyyy-MM-dd");
             string codigo = txtCodigo.Text;
             string Lote = txtLote.Text;
             string Nome = txtNome.Text;
             string Valor = txtValor.Text;
-            string Categoria = txtCategoria.Text;
+            string Categoria = CBCategoria.Text;
+            //na proxima linha eu fiz uma variavel para aparecer esta mensagem no mensagem boox.show
+            // $ este simbolo de cifrão serve para concatenar a mensagem igual ao simbolo de +
             string mensagem = $"Nome do Produto: {Nome}\n" +
 
                               $"Código de Barras: {codigo}\n" +
@@ -51,8 +56,9 @@ namespace Aula_1___respondendo_perguntas
                             
                               $"Data de Fabricação: {Fabricacao}";
 
-            //Ao inves do menssage box jogar para o banco de dados 
-
+            //Ao inves do menssage box, jogar para o banco de dados (depois)
+            // este MessageBoxButtons serve para eu criar uma caixa com o ok ou o que eu quiser confirmar 
+            // o messageBoxIcon serve para eu colocar o simbolo de informação na message show
             MessageBox.Show(mensagem, "Informações do Produto", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 

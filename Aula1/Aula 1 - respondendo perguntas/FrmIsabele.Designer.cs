@@ -45,8 +45,8 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.CBCategoria = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label
@@ -206,14 +206,6 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "Categoria do Produto :";
             // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategoria.Location = new System.Drawing.Point(571, 84);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(382, 29);
-            this.txtCategoria.TabIndex = 18;
-            // 
             // btnLimpar
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -225,14 +217,26 @@
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
+            // CBCategoria
+            // 
+            this.CBCategoria.FormattingEnabled = true;
+            this.CBCategoria.Items.AddRange(new object[] {
+            "Fruta",
+            "Legume",
+            "Bebidas"});
+            this.CBCategoria.Location = new System.Drawing.Point(571, 89);
+            this.CBCategoria.Name = "CBCategoria";
+            this.CBCategoria.Size = new System.Drawing.Size(382, 21);
+            this.CBCategoria.TabIndex = 20;
+            // 
             // txtLimpar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1078, 595);
+            this.Controls.Add(this.CBCategoria);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSalvar);
@@ -277,7 +281,7 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.ComboBox CBCategoria;
     }
 }
