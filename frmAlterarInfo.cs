@@ -49,13 +49,17 @@ namespace Aula_1___respondendo_perguntas
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-          
-            txtNsenha.UseSystemPasswordChar = false; 
-
-            txtRsenha.UseSystemPasswordChar = false; 
-
-            
-
+          if (txtNsenha.UseSystemPasswordChar)
+            {
+                txtNsenha.UseSystemPasswordChar = false;
+                txtRsenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtNsenha.UseSystemPasswordChar = true;
+                txtRsenha.UseSystemPasswordChar = true;
+            }
+  
         }
 
         private void txtNsenha_TextChanged(object sender, EventArgs e)
