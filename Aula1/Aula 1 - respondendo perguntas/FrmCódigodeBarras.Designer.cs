@@ -44,6 +44,7 @@
             this.btnDigiteCod.TabIndex = 0;
             this.btnDigiteCod.Text = "Digite ou cole o código";
             this.btnDigiteCod.UseVisualStyleBackColor = true;
+            this.btnDigiteCod.Click += new System.EventHandler(this.btnDigiteCod_Click);
             // 
             // lblCódBarras
             // 

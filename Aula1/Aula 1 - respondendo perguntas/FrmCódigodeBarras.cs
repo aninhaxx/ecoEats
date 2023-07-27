@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,12 +20,24 @@ namespace Aula_1___respondendo_perguntas
 
         private void btnContinuar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("");
+            string cod = btnDigiteCod.Text;
+            if ( cod == "")
+             {
+                MessageBox.Show ("Digite algum código de barras");
+                return;
+             }
+
+            MessageBox.Show("Código:" + cod);
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnDigiteCod_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
