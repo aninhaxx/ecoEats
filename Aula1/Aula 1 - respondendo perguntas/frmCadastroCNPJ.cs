@@ -47,73 +47,117 @@ namespace Aula_1___respondendo_perguntas
             string senha = txtSenha.Text;
             string confirmarsenha = txtConfirmarSenha.Text;
 
-            string confirmar = rbtnInformacoes.Text;
-
-        
-
-            if (cnpj == "" ^ razao == "" ^ nome == "" ^ endereco == "" ^ numero == "" ^ bairro == "" ^ cep == "" ^ estado == "" ^ telefone == "" ^ email == "" ^ senha == "" ^ confirmarsenha == "")
-                MessageBox.Show("Prencha todos os campos!");
             if (cnpj == "")
             {
                 mskCNPJ.BackColor = Color.PaleVioletRed;
             }
+            else
+                {
+                    mskCNPJ.BackColor = Color.White;
+                }
             if(razao == "")
             {
                 txtRSocial.BackColor = Color.PaleVioletRed;  
+            }
+            else
+            {
+                txtRSocial.BackColor = Color.White;
             }
             if(nome == "")
             {
                 txtNFantsaia.BackColor = Color.PaleVioletRed;                
             }
+            else
+            {
+                txtNFantsaia.BackColor = Color.White;
+            }
             if(endereco == "")
             {
                 txtEndereco.BackColor = Color.PaleVioletRed;               
+            }
+            else
+            {
+                txtEndereco.BackColor = Color.White;
             }
             if(numero == "")
             {
                 txtNumero.BackColor = Color.PaleVioletRed;               
             }
+            else
+            {
+                txtNumero.BackColor = Color.White;
+            }
             if(bairro == "")
             {
                 txtBairro.BackColor = Color.PaleVioletRed;                
+            }
+            else
+            {
+                txtBairro.BackColor = Color.White;
             }
             if(cep == "")
             {
                 mskCEP.BackColor = Color.PaleVioletRed;
             }
+            else
+            {
+                mskCEP.BackColor = Color.White;
+            }
             if(estado == "")
             {
                 cbUF.BackColor = Color.PaleVioletRed;
+            }
+            else
+            {
+                cbUF.BackColor = Color.White;
             }
             if(telefone == "")
             {
                 mskTelefone.BackColor = Color.PaleVioletRed;               
             }
+            else
+            {
+                mskTelefone.BackColor = Color.White;
+            }
             if(email == "")
             {
                 txtEmail.BackColor = Color.PaleVioletRed;               
+            }
+            else
+            {
+                txtEmail.BackColor = Color.White;
             }
             if(senha =="")
             {
                 txtSenha.BackColor = Color.PaleVioletRed;             
             }
+            else
+            {
+                txtSenha.BackColor = Color.White;
+            }
             if(confirmarsenha == "")
             {
-                txtConfirmarSenha.BackColor = Color.PaleVioletRed;               
-            
-            
-            
-               
+                txtConfirmarSenha.BackColor = Color.PaleVioletRed;                  
             }
             else
             {
-                MessageBox.Show("Cadastro concluído!");
+                txtConfirmarSenha.BackColor = Color.White;
             }
-                
             
+            
+            if (cnpj == "" || razao == "" || nome == "" || endereco == "" || numero == "" || bairro == "" || cep == "" || estado == "" || telefone == "" || email == "" || senha == "" || confirmarsenha == "")
+            {
+                MessageBox.Show("Prencha todos os campos!");
+            }  
+            else
+            {
+                MessageBox.Show("Cadastro concluído");
+            }
 
-            
-        }   
+
+
+
+        }
 
         private void frmCadastroCNPJ_Load(object sender, EventArgs e)
         {
