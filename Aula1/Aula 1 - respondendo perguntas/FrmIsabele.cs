@@ -30,8 +30,20 @@ namespace Aula_1___respondendo_perguntas
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            //esse if serve para verificar se o txt esta vazio se estiver ele vai aparecer a massage box 
+            if (string.IsNullOrWhiteSpace(txtNome.Text))
+            {
+                
+                MessageBox.Show("O Nome do Produto é obrigatório.", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // o return sai do erro e segue o programa 
 
-
+            }
+            if (string.IsNullOrWhiteSpace(txtCodigo.Text))
+            {
+                
+                MessageBox.Show("O Codigo do Produto é  obrigatório.", "Campo Obrigatório", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; 
+            }
             //estou declarando as variaveis para elas ficarem salvas no Botão salvar
             String Validade = DTPValidade.Value.ToString("yyyy-MM-dd");
             String Fabricacao = DTPFabricacao.Value.ToString("yyyy-MM-dd");
@@ -76,6 +88,8 @@ namespace Aula_1___respondendo_perguntas
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
+            //o empty significa vazio e o noww volta para data de hoje
+
             txtCodigo.Text = string.Empty;
             txtLote.Text = string.Empty;
             txtNome.Text = string.Empty;
@@ -99,6 +113,29 @@ namespace Aula_1___respondendo_perguntas
         private void paginaInicialToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtValor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Ve se o texto é um número ou uma tecla de controle (por exemplo, backspace)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Impede a entrada de caracteres não numéricos
+            }
+        }
+
+        private void txtValor_TextChanged(object sender, EventArgs e)
+        {
+
+            // Obtém o valor atual do TextBox
+            string valor = txtValor.Text;
+
+            // Converte o valor para um decimal, removendo o símbolo "R$" e qualquer outro caractere não numérico
+            if (decimal.TryParse(valor.Replace("R$", "").Replace(".", "").Replace(",", ""), out decimal valorDecimal))
+            {
+                // Formata o valor como moeda e exibe novamente no TextBox com o símbolo "R$"
+                txtValor.Text = valorDecimal.ToString("C");
+            }
         }
     }
 }

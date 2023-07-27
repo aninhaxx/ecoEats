@@ -49,6 +49,8 @@
             this.CBCategoria = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.paginaInicialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -139,6 +141,9 @@
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(382, 29);
             this.txtValor.TabIndex = 9;
+            this.txtValor.Text = "R$ 0,00";
+            this.txtValor.TextChanged += new System.EventHandler(this.txtValor_TextChanged);
+            this.txtValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValor_KeyPress);
             // 
             // txtCodigo
             // 
@@ -184,7 +189,7 @@
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnSalvar.Location = new System.Drawing.Point(703, 509);
+            this.btnSalvar.Location = new System.Drawing.Point(571, 509);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(183, 40);
             this.btnSalvar.TabIndex = 15;
@@ -213,7 +218,7 @@
             // btnLimpar
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnLimpar.Location = new System.Drawing.Point(252, 513);
+            this.btnLimpar.Location = new System.Drawing.Point(851, 509);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(169, 36);
             this.btnLimpar.TabIndex = 19;
@@ -242,6 +247,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.paginaInicialToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -252,10 +258,32 @@
             // 
             // paginaInicialToolStripMenuItem
             // 
+            this.paginaInicialToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.paginaInicialToolStripMenuItem.Name = "paginaInicialToolStripMenuItem";
             this.paginaInicialToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
             this.paginaInicialToolStripMenuItem.Text = "Pagina Inicial";
             this.paginaInicialToolStripMenuItem.Click += new System.EventHandler(this.paginaInicialToolStripMenuItem_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(180, 30);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(20, 25);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "*";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(180, 437);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(20, 25);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "*";
             // 
             // txtLimpar
             // 
@@ -263,6 +291,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1087, 592);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.CBCategoria);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.label5);
@@ -317,5 +347,7 @@
         private System.Windows.Forms.ComboBox CBCategoria;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem paginaInicialToolStripMenuItem;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
