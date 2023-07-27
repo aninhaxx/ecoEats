@@ -51,6 +51,10 @@
             this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
             this.mskCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.mskCEP = new System.Windows.Forms.MaskedTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblCNPJ
@@ -174,6 +178,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.Location = new System.Drawing.Point(277, 242);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(353, 20);
@@ -182,13 +187,14 @@
             // rbtnInformacoes
             // 
             this.rbtnInformacoes.AutoSize = true;
-            this.rbtnInformacoes.Location = new System.Drawing.Point(23, 300);
+            this.rbtnInformacoes.Location = new System.Drawing.Point(24, 351);
             this.rbtnInformacoes.Name = "rbtnInformacoes";
             this.rbtnInformacoes.Size = new System.Drawing.Size(316, 17);
             this.rbtnInformacoes.TabIndex = 18;
             this.rbtnInformacoes.TabStop = true;
             this.rbtnInformacoes.Text = "Confirmo que as informações declaras acima são verdadeiras.";
             this.rbtnInformacoes.UseVisualStyleBackColor = true;
+            this.rbtnInformacoes.CheckedChanged += new System.EventHandler(this.rbtnInformacoes_CheckedChanged);
             // 
             // btnCadastrar
             // 
@@ -247,6 +253,7 @@
             this.cbUF.Name = "cbUF";
             this.cbUF.Size = new System.Drawing.Size(44, 21);
             this.cbUF.TabIndex = 21;
+            this.cbUF.SelectedIndexChanged += new System.EventHandler(this.cbUF_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -285,12 +292,50 @@
             this.mskCEP.TabIndex = 25;
             this.mskCEP.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 298);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Senha:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(237, 298);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 13);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Confirmar senha:";
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(64, 295);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(145, 20);
+            this.txtSenha.TabIndex = 25;
+            this.txtSenha.UseSystemPasswordChar = true;
+            // 
+            // txtConfirmarSenha
+            // 
+            this.txtConfirmarSenha.Location = new System.Drawing.Point(329, 295);
+            this.txtConfirmarSenha.Name = "txtConfirmarSenha";
+            this.txtConfirmarSenha.Size = new System.Drawing.Size(154, 20);
+            this.txtConfirmarSenha.TabIndex = 25;
+            this.txtConfirmarSenha.UseSystemPasswordChar = true;
+            // 
             // frmCadastroCNPJ
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(758, 389);
+            this.Controls.Add(this.txtConfirmarSenha);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.mskCEP);
             this.Controls.Add(this.mskCNPJ);
             this.Controls.Add(this.mskTelefone);
@@ -316,6 +361,7 @@
             this.Controls.Add(this.lblCNPJ);
             this.Name = "frmCadastroCNPJ";
             this.Text = "frmCadastroCNPJ";
+            this.Load += new System.EventHandler(this.frmCadastroCNPJ_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,5 +392,9 @@
         private System.Windows.Forms.MaskedTextBox mskTelefone;
         private System.Windows.Forms.MaskedTextBox mskCNPJ;
         private System.Windows.Forms.MaskedTextBox mskCEP;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.TextBox txtConfirmarSenha;
     }
 }
