@@ -98,5 +98,11 @@
   <ItemGroup>
     <None Include="Resources\Face Smile Sticker by odsanyu for iOS &amp; Android _ GIPHY.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happy So Excited Sticker for iOS &amp; Android _ GIPHY.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

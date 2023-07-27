@@ -17,6 +17,15 @@ namespace Aula_1___respondendo_perguntas
             InitializeComponent();
         }
 
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            
+        }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

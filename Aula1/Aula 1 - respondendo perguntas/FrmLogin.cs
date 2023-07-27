@@ -22,33 +22,7 @@ namespace Aula_1___respondendo_perguntas
 
         }
 
-        private void btnLogar_Click(object sender, EventArgs e)
-        {
-            string documento = txtCPF_CNPJ.Text;
-            string senha = txtSenha.Text;
-            if (documento =="" || senha=="")
-            {
-               
-                MessageBox.Show("Preencha todos os campos!!");
-                return;
-            }
-        }
-
-        private void lblMostarEsconder_Click(object sender, EventArgs e)
-        {
-            bool mostrar = txtSenha.UseSystemPasswordChar;
-            if (mostrar == true)
-            {
-                txtSenha.UseSystemPasswordChar = false;
-                lblMostarEsconder.Text = "Esconder senha";
-                mostrar = false;
-            }
-            else if (mostrar==false)
-            {
-                txtSenha.UseSystemPasswordChar = true;
-                lblMostarEsconder.Text = "Mostrar senha";
-            }
-        }
+    
 
         private void btnRedefinirSenha_Click(object sender, EventArgs e)
         {
@@ -60,6 +34,49 @@ namespace Aula_1___respondendo_perguntas
         private void FrmLogin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogar_Click(object sender, EventArgs e)
+        {
+            string documento = txtCPF_CNPJ.Text;
+            string senha = txtSenha.Text;
+            if (documento == "" || senha == "")
+            {
+                if(documento == "" && senha == "")
+                {
+                    txtCPF_CNPJ.BackColor = Color.Tomato;
+                    txtSenha.BackColor = Color.Tomato;
+                }
+                
+                else if (documento == "")
+                {
+                    txtCPF_CNPJ.BackColor = Color.Tomato;
+                }
+                else if(senha == "")
+                {
+                  txtSenha.BackColor = Color.Tomato;
+                }
+                MessageBox.Show("Preencha todos os campos!!");
+                txtCPF_CNPJ.BackColor = Color.White;
+                txtSenha.BackColor = Color.White;
+                return;
+            }
+        }
+
+        private void lblMostrarEsconder_Click(object sender, EventArgs e)
+        {
+            bool mostrar = txtSenha.UseSystemPasswordChar;
+            if (mostrar == true)
+            {
+                txtSenha.UseSystemPasswordChar = false;
+                lblMostrarEsconder.Text = "Esconder senha";
+                mostrar = false;
+            }
+            else if (mostrar == false)
+            {
+                txtSenha.UseSystemPasswordChar = true;
+                lblMostrarEsconder.Text = "Mostrar senha";
+            }
         }
     }
 }

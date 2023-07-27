@@ -83,9 +83,29 @@ namespace Aula_1___respondendo_perguntas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome {
+            get {
+                object obj = ResourceManager.GetObject("Design sem nome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Face_Smile_Sticker_by_odsanyu_for_iOS___Android___GIPHY {
             get {
                 object obj = ResourceManager.GetObject("Face Smile Sticker by odsanyu for iOS & Android _ GIPHY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Happy_So_Excited_Sticker_for_iOS___Android___GIPHY {
+            get {
+                object obj = ResourceManager.GetObject("Happy So Excited Sticker for iOS & Android _ GIPHY", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

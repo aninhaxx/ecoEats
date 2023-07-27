@@ -34,7 +34,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtCPF_CNPJ = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
-            this.lblMostarEsconder = new System.Windows.Forms.Label();
+            this.lblMostrarEsconder = new System.Windows.Forms.Label();
             this.btnRedefinirSenha = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -83,6 +83,7 @@
             // 
             // txtCPF_CNPJ
             // 
+            this.txtCPF_CNPJ.BackColor = System.Drawing.Color.White;
             this.txtCPF_CNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCPF_CNPJ.Location = new System.Drawing.Point(288, 142);
             this.txtCPF_CNPJ.Name = "txtCPF_CNPJ";
@@ -98,18 +99,18 @@
             this.txtSenha.TabIndex = 5;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
-            // lblMostarEsconder
+            // lblMostrarEsconder
             // 
-            this.lblMostarEsconder.AutoSize = true;
-            this.lblMostarEsconder.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.lblMostarEsconder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblMostarEsconder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMostarEsconder.Location = new System.Drawing.Point(504, 191);
-            this.lblMostarEsconder.Name = "lblMostarEsconder";
-            this.lblMostarEsconder.Size = new System.Drawing.Size(106, 18);
-            this.lblMostarEsconder.TabIndex = 6;
-            this.lblMostarEsconder.Text = "Mostrar Senha";
-            this.lblMostarEsconder.Click += new System.EventHandler(this.lblMostarEsconder_Click);
+            this.lblMostrarEsconder.AutoSize = true;
+            this.lblMostrarEsconder.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.lblMostrarEsconder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblMostrarEsconder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostrarEsconder.Location = new System.Drawing.Point(504, 191);
+            this.lblMostrarEsconder.Name = "lblMostrarEsconder";
+            this.lblMostrarEsconder.Size = new System.Drawing.Size(106, 18);
+            this.lblMostrarEsconder.TabIndex = 6;
+            this.lblMostrarEsconder.Text = "Mostrar Senha";
+            this.lblMostrarEsconder.Click += new System.EventHandler(this.lblMostrarEsconder_Click);
             // 
             // btnRedefinirSenha
             // 
@@ -133,7 +134,7 @@
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRedefinirSenha);
-            this.Controls.Add(this.lblMostarEsconder);
+            this.Controls.Add(this.lblMostrarEsconder);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtCPF_CNPJ);
             this.Controls.Add(this.label3);
@@ -156,7 +157,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCPF_CNPJ;
         private System.Windows.Forms.TextBox txtSenha;
-        private System.Windows.Forms.Label lblMostarEsconder;
+        private System.Windows.Forms.Label lblMostrarEsconder;
         private System.Windows.Forms.Button btnRedefinirSenha;
     }
 }
