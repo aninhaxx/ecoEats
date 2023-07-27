@@ -39,7 +39,7 @@ namespace Aula_1___respondendo_perguntas
             string Lote = txtLote.Text;
             string Nome = txtNome.Text;
             string Valor = txtValor.Text;
-            string Categoria = CBCategoria.Text;
+            string Categoria = CBCategoria.SelectedItem.ToString();
             //na proxima linha eu fiz uma variavel para aparecer esta mensagem no mensagem boox.show
             // $ este simbolo de cifrão serve para concatenar a mensagem igual ao simbolo de +
             string mensagem = $"Nome do Produto: {Nome}\n" +
@@ -57,9 +57,10 @@ namespace Aula_1___respondendo_perguntas
                               $"Data de Fabricação: {Fabricacao}";
 
             //Ao inves do menssage box, jogar para o banco de dados (depois)
-            // este MessageBoxButtons serve para eu criar uma caixa com o ok ou o que eu quiser confirmar 
+            // este MessageBoxButtons serve para eu criar uma caixa com o ok ou cancel
+
             // o messageBoxIcon serve para eu colocar o simbolo de informação na message show
-            MessageBox.Show(mensagem, "Informações do Produto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensagem, "Informações do Produto", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
 
 
 
@@ -78,11 +79,26 @@ namespace Aula_1___respondendo_perguntas
             txtCodigo.Text = string.Empty;
             txtLote.Text = string.Empty;
             txtNome.Text = string.Empty;
-            txtCategoria.Text = string.Empty;
+            CBCategoria.Text = string.Empty;
             txtDescricao.Text = string.Empty;   
             txtValor.Text = string.Empty;
             DTPValidade.Value = DateTime.Now;
             DTPFabricacao.Value = DateTime.Now;
+        }
+
+        private void CBCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DTPFabricacao_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void paginaInicialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
