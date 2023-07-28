@@ -20,7 +20,7 @@ namespace Aula_1___respondendo_perguntas
 
         private void btnContinuar_Click(object sender, EventArgs e)
         {
-            string cod = btnDigiteCod.Text;
+            string cod = textBoxDigCod.Text;
             if ( cod == "")
              {
                 MessageBox.Show ("Digite algum código de barras");
@@ -32,7 +32,7 @@ namespace Aula_1___respondendo_perguntas
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            
+          
         }
 
         private void btnDigiteCod_Click(object sender, EventArgs e)
