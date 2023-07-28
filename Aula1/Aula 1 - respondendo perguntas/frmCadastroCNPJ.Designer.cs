@@ -58,8 +58,6 @@
             this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
             this.pbCSenha = new System.Windows.Forms.PictureBox();
             this.pbCSenha2 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCSenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCSenha2)).BeginInit();
             this.SuspendLayout();
@@ -151,7 +149,7 @@
             // btnCadastrar
             // 
             resources.ApplyResources(this.btnCadastrar, "btnCadastrar");
-            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(111)))), ((int)(((byte)(9)))));
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -199,6 +197,7 @@
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Name = "label2";
             // 
             // mskTelefone
@@ -257,23 +256,11 @@
             this.pbCSenha2.TabStop = false;
             this.pbCSenha2.Click += new System.EventHandler(this.pictureBox1_Click_2);
             // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";            
-            // 
             // frmCadastroCNPJ
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(177)))), ((int)(((byte)(117)))));
             this.Controls.Add(this.pbCSenha2);
             this.Controls.Add(this.pbCSenha);
             this.Controls.Add(this.txtConfirmarSenha);
@@ -342,7 +329,5 @@
         private System.Windows.Forms.PictureBox pbCSenha;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.PictureBox pbCSenha2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
     }
 }
