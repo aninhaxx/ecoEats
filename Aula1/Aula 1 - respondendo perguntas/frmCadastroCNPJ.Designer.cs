@@ -58,6 +58,8 @@
             this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
             this.pbCSenha = new System.Windows.Forms.PictureBox();
             this.pbCSenha2 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCSenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCSenha2)).BeginInit();
             this.SuspendLayout();
@@ -86,19 +88,16 @@
             // 
             resources.ApplyResources(this.lblNumero, "lblNumero");
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Click += new System.EventHandler(this.lblNumero_Click);
             // 
             // lblBairro
             // 
             resources.ApplyResources(this.lblBairro, "lblBairro");
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Click += new System.EventHandler(this.lblBairro_Click);
             // 
             // lblCep
             // 
             resources.ApplyResources(this.lblCep, "lblCep");
             this.lblCep.Name = "lblCep";
-            this.lblCep.Click += new System.EventHandler(this.lblCep_Click);
             // 
             // lblContato
             // 
@@ -148,7 +147,6 @@
             this.rbtnInformacoes.Name = "rbtnInformacoes";
             this.rbtnInformacoes.TabStop = true;
             this.rbtnInformacoes.UseVisualStyleBackColor = true;
-            this.rbtnInformacoes.CheckedChanged += new System.EventHandler(this.rbtnInformacoes_CheckedChanged);
             // 
             // btnCadastrar
             // 
@@ -236,17 +234,17 @@
             resources.ApplyResources(this.txtSenha, "txtSenha");
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.UseWaitCursor = true;
-            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // txtConfirmarSenha
             // 
             resources.ApplyResources(this.txtConfirmarSenha, "txtConfirmarSenha");
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
+            this.txtConfirmarSenha.UseWaitCursor = true;
             // 
             // pbCSenha
             // 
             resources.ApplyResources(this.pbCSenha, "pbCSenha");
-            this.pbCSenha.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.view;
+            this.pbCSenha.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.hide;
             this.pbCSenha.Name = "pbCSenha";
             this.pbCSenha.TabStop = false;
             this.pbCSenha.Click += new System.EventHandler(this.pictureBox1_Click_1);
@@ -254,16 +252,28 @@
             // pbCSenha2
             // 
             resources.ApplyResources(this.pbCSenha2, "pbCSenha2");
-            this.pbCSenha2.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.view;
+            this.pbCSenha2.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.hide;
             this.pbCSenha2.Name = "pbCSenha2";
             this.pbCSenha2.TabStop = false;
             this.pbCSenha2.Click += new System.EventHandler(this.pictureBox1_Click_2);
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";            
             // 
             // frmCadastroCNPJ
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.pbCSenha2);
             this.Controls.Add(this.pbCSenha);
             this.Controls.Add(this.txtConfirmarSenha);
@@ -294,7 +304,6 @@
             this.Controls.Add(this.lblRazaoSocial);
             this.Controls.Add(this.lblCNPJ);
             this.Name = "frmCadastroCNPJ";
-            this.Load += new System.EventHandler(this.frmCadastroCNPJ_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbCSenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCSenha2)).EndInit();
             this.ResumeLayout(false);
@@ -331,7 +340,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtConfirmarSenha;
         private System.Windows.Forms.PictureBox pbCSenha;
-        private System.Windows.Forms.PictureBox pbCSenha2;
         private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.PictureBox pbCSenha2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

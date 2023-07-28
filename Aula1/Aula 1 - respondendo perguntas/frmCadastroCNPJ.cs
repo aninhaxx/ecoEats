@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace Aula_1___respondendo_perguntas
 {
@@ -18,20 +12,6 @@ namespace Aula_1___respondendo_perguntas
             InitializeComponent();
         }
 
-        private void lblNumero_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblBairro_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCep_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
@@ -53,50 +33,50 @@ namespace Aula_1___respondendo_perguntas
                 mskCNPJ.BackColor = Color.PaleVioletRed;
             }
             else
-                {
-                    mskCNPJ.BackColor = Color.White;
-                }
-            if(razao == "")
             {
-                txtRSocial.BackColor = Color.PaleVioletRed;  
+                mskCNPJ.BackColor = Color.White;
+            }
+            if (razao == "")
+            {
+                txtRSocial.BackColor = Color.PaleVioletRed;
             }
             else
             {
                 txtRSocial.BackColor = Color.White;
             }
-            if(nome == "")
+            if (nome == "")
             {
-                txtNFantsaia.BackColor = Color.PaleVioletRed;                
+                txtNFantsaia.BackColor = Color.PaleVioletRed;
             }
             else
             {
                 txtNFantsaia.BackColor = Color.White;
             }
-            if(endereco == "")
+            if (endereco == "")
             {
-                txtEndereco.BackColor = Color.PaleVioletRed;               
+                txtEndereco.BackColor = Color.PaleVioletRed;
             }
             else
             {
                 txtEndereco.BackColor = Color.White;
             }
-            if(numero == "")
+            if (numero == "")
             {
-                txtNumero.BackColor = Color.PaleVioletRed;               
+                txtNumero.BackColor = Color.PaleVioletRed;
             }
             else
             {
                 txtNumero.BackColor = Color.White;
             }
-            if(bairro == "")
+            if (bairro == "")
             {
-                txtBairro.BackColor = Color.PaleVioletRed;                
+                txtBairro.BackColor = Color.PaleVioletRed;
             }
             else
             {
                 txtBairro.BackColor = Color.White;
             }
-            if(cep == "")
+            if (cep == "")
             {
                 mskCEP.BackColor = Color.PaleVioletRed;
             }
@@ -104,7 +84,7 @@ namespace Aula_1___respondendo_perguntas
             {
                 mskCEP.BackColor = Color.White;
             }
-            if(estado == "")
+            if (estado == "")
             {
                 cbUF.BackColor = Color.PaleVioletRed;
             }
@@ -112,129 +92,89 @@ namespace Aula_1___respondendo_perguntas
             {
                 cbUF.BackColor = Color.White;
             }
-            if(telefone == "")
+            if (telefone == "")
             {
-                mskTelefone.BackColor = Color.PaleVioletRed;               
+                mskTelefone.BackColor = Color.PaleVioletRed;
             }
             else
             {
                 mskTelefone.BackColor = Color.White;
             }
-            if(email == "")
+            if (email == "")
             {
-                txtEmail.BackColor = Color.PaleVioletRed;               
+                txtEmail.BackColor = Color.PaleVioletRed;
             }
             else
             {
                 txtEmail.BackColor = Color.White;
             }
-            if(senha =="")
+            if (senha == "")
             {
-                txtSenha.BackColor = Color.PaleVioletRed;             
+                txtSenha.BackColor = Color.PaleVioletRed;
             }
             else
             {
                 txtSenha.BackColor = Color.White;
             }
-            if(confirmarsenha == "")
+            if (confirmarsenha == "")
             {
-                txtConfirmarSenha.BackColor = Color.PaleVioletRed;                  
+                txtConfirmarSenha.BackColor = Color.PaleVioletRed;
             }
             else
             {
                 txtConfirmarSenha.BackColor = Color.White;
             }
-            
-            
             if (cnpj == "" || razao == "" || nome == "" || endereco == "" || numero == "" || bairro == "" || cep == "" || estado == "" || telefone == "" || email == "" || senha == "" || confirmarsenha == "")
             {
                 MessageBox.Show("Prencha todos os campos!");
-            }  
+            }
             else
             {
                 MessageBox.Show("Cadastro concluído");
             }
-
-
-
-
         }
-
-        private void frmCadastroCNPJ_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void cbUF_SelectedIndexChanged(object sender, EventArgs e)
         {
             string estado = cbUF.SelectedItem.ToString();
         }
-
-        private void rbtnInformacoes_CheckedChanged(object sender, EventArgs e)
-        {
-           
-        }
-
         private void txtEmail_Validated(object sender, EventArgs e)
         {
             Regex regex = new Regex(@"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$");
-            if(!regex.IsMatch(txtEmail.Text))
+            if (!regex.IsMatch(txtEmail.Text))
             {
                 MessageBox.Show("E-mail Inválido!");
                 txtEmail.BackColor = Color.PaleVioletRed;
                 txtEmail.Focus();
             }
-
         }
-
-        private void txtSenha_TextChanged(object sender, EventArgs e)
-        {
-            
-            
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-           
-
-
-            
-        }
-
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-
-
-            if (txtConfirmarSenha.PasswordChar == '*')
-            {
-                txtConfirmarSenha.PasswordChar = '\0'; 
-                pbCSenha.Image = Image.FromFile(@"..\..\Imagens\view.png");
-                txtConfirmarSenha.UseSystemPasswordChar = true;
-            }
-            else 
-            {               
-                txtConfirmarSenha.PasswordChar = '*';
-                pbCSenha.Image = Image.FromFile(@"..\..\Imagens\hide.png");
-                txtConfirmarSenha.UseSystemPasswordChar = false;
-            }
-            
-            
-        }
-
-        private void pictureBox1_Click_2(object sender, EventArgs e)
-        {
-
             if (txtConfirmarSenha.PasswordChar == '*')
             {
                 txtConfirmarSenha.PasswordChar = '\0';
                 pbCSenha2.Image = Image.FromFile(@"..\..\Imagens\view.png");
-                txtConfirmarSenha.UseSystemPasswordChar = true;
+                txtConfirmarSenha.UseSystemPasswordChar = false;
             }
             else
             {
                 txtConfirmarSenha.PasswordChar = '*';
                 pbCSenha2.Image = Image.FromFile(@"..\..\Imagens\hide.png");
                 txtConfirmarSenha.UseSystemPasswordChar = false;
+            }
+        }
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+            if (txtSenha.PasswordChar == '*')
+            {
+                txtSenha.PasswordChar = '\0';
+                pbCSenha2.Image = Image.FromFile(@"..\..\Imagens\view.png");
+                txtSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtSenha.PasswordChar = '*';
+                pbCSenha2.Image = Image.FromFile(@"..\..\Imagens\hide.png");
+                txtSenha.UseSystemPasswordChar = false;
             }
         }
     }
