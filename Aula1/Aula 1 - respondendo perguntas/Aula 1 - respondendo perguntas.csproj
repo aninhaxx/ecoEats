@@ -104,5 +104,22 @@
   <ItemGroup>
     <None Include="Resources\Design sem nome.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagemScore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imagens\Capybara with Flower Sticker.png" />
+    <Content Include="imagens\Design sem nome.png" />
+    <Content Include="imagens\ecoEats %281%29.png" />
+    <Content Include="imagens\ecoEats.png" />
+    <Content Include="imagens\hide.png" />
+    <Content Include="imagens\imagemScore.gif" />
+    <Content Include="imagens\imagemScore.png" />
+    <Content Include="imagens\Or Even More Gourmet.gif" />
+    <Content Include="imagens\Orang on hed.png" />
+    <Content Include="imagens\view.png" />
+    <None Include="Resources\hide.png" />
+    <None Include="Resources\view.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -33,7 +33,7 @@ namespace Aula_1___respondendo_perguntas
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
@@ -63,19 +63,19 @@ namespace Aula_1___respondendo_perguntas
             }
         }
 
-        private void lblMostrarEsconder_Click(object sender, EventArgs e)
+        private void picMostrarEsconder_Click(object sender, EventArgs e)
         {
             bool mostrar = txtSenha.UseSystemPasswordChar;
             if (mostrar == true)
             {
                 txtSenha.UseSystemPasswordChar = false;
-                lblMostrarEsconder.Text = "Esconder senha";
+                picMostrarEsconder.BackgroundImage = Properties.Resources.hide;
                 mostrar = false;
             }
             else if (mostrar == false)
             {
                 txtSenha.UseSystemPasswordChar = true;
-                lblMostrarEsconder.Text = "Mostrar senha";
+                picMostrarEsconder.BackgroundImage = Properties.Resources.view;
             }
         }
     }
