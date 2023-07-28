@@ -134,7 +134,7 @@ namespace Aula_1___respondendo_perguntas
             // 
             this.pictureBox1.BackgroundImage = global::Aula_1___respondendo_perguntas.Properties.Resources.imagemScore;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 400);
+            this.pictureBox1.Location = new System.Drawing.Point(83, 439);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(685, 428);
             this.pictureBox1.TabIndex = 11;

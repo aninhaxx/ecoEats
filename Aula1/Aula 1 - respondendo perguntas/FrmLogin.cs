@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Aula_1___respondendo_perguntas
 {
-    public partial class FrmLogin : Form
+    public partial class frmLogin : Form
     {
-        public FrmLogin()
+        public frmLogin()
         {
             InitializeComponent();
         }
