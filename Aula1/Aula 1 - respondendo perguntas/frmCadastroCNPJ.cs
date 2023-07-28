@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Aula_1___respondendo_perguntas
 {
@@ -171,7 +172,70 @@ namespace Aula_1___respondendo_perguntas
 
         private void rbtnInformacoes_CheckedChanged(object sender, EventArgs e)
         {
-               
+           
+        }
+
+        private void txtEmail_Validated(object sender, EventArgs e)
+        {
+            Regex regex = new Regex(@"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$");
+            if(!regex.IsMatch(txtEmail.Text))
+            {
+                MessageBox.Show("E-mail Inválido!");
+                txtEmail.BackColor = Color.PaleVioletRed;
+                txtEmail.Focus();
+            }
+
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+           
+
+
+            
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+
+            if (txtConfirmarSenha.PasswordChar == '*')
+            {
+                txtConfirmarSenha.PasswordChar = '\0'; 
+                pbCSenha.Image = Image.FromFile(@"..\..\Imagens\view.png");
+                txtConfirmarSenha.UseSystemPasswordChar = true;
+            }
+            else 
+            {               
+                txtConfirmarSenha.PasswordChar = '*';
+                pbCSenha.Image = Image.FromFile(@"..\..\Imagens\hide.png");
+                txtConfirmarSenha.UseSystemPasswordChar = false;
+            }
+            
+            
+        }
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+
+            if (txtConfirmarSenha.PasswordChar == '*')
+            {
+                txtConfirmarSenha.PasswordChar = '\0';
+                pbCSenha2.Image = Image.FromFile(@"..\..\Imagens\view.png");
+                txtConfirmarSenha.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtConfirmarSenha.PasswordChar = '*';
+                pbCSenha2.Image = Image.FromFile(@"..\..\Imagens\hide.png");
+                txtConfirmarSenha.UseSystemPasswordChar = false;
+            }
         }
     }
 }

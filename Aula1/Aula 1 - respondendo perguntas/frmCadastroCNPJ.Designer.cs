@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroCNPJ));
             this.lblCNPJ = new System.Windows.Forms.Label();
             this.lblRazaoSocial = new System.Windows.Forms.Label();
             this.lblNomeFantasia = new System.Windows.Forms.Label();
@@ -55,283 +56,216 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
+            this.pbCSenha = new System.Windows.Forms.PictureBox();
+            this.pbCSenha2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCSenha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCSenha2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCNPJ
             // 
-            this.lblCNPJ.AutoSize = true;
-            this.lblCNPJ.Location = new System.Drawing.Point(21, 56);
+            resources.ApplyResources(this.lblCNPJ, "lblCNPJ");
             this.lblCNPJ.Name = "lblCNPJ";
-            this.lblCNPJ.Size = new System.Drawing.Size(37, 13);
-            this.lblCNPJ.TabIndex = 0;
-            this.lblCNPJ.Text = "CNPJ:";
             // 
             // lblRazaoSocial
             // 
-            this.lblRazaoSocial.AutoSize = true;
-            this.lblRazaoSocial.Location = new System.Drawing.Point(250, 56);
+            resources.ApplyResources(this.lblRazaoSocial, "lblRazaoSocial");
             this.lblRazaoSocial.Name = "lblRazaoSocial";
-            this.lblRazaoSocial.Size = new System.Drawing.Size(73, 13);
-            this.lblRazaoSocial.TabIndex = 1;
-            this.lblRazaoSocial.Text = "Razão Social:";
             // 
             // lblNomeFantasia
             // 
-            this.lblNomeFantasia.AutoSize = true;
-            this.lblNomeFantasia.Location = new System.Drawing.Point(20, 100);
+            resources.ApplyResources(this.lblNomeFantasia, "lblNomeFantasia");
             this.lblNomeFantasia.Name = "lblNomeFantasia";
-            this.lblNomeFantasia.Size = new System.Drawing.Size(81, 13);
-            this.lblNomeFantasia.TabIndex = 2;
-            this.lblNomeFantasia.Text = "Nome Fantasia:";
             // 
             // lblEndereco
             // 
-            this.lblEndereco.AutoSize = true;
-            this.lblEndereco.Location = new System.Drawing.Point(20, 154);
+            resources.ApplyResources(this.lblEndereco, "lblEndereco");
             this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(56, 13);
-            this.lblEndereco.TabIndex = 3;
-            this.lblEndereco.Text = "Endereço:";
             // 
             // lblNumero
             // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(399, 154);
+            resources.ApplyResources(this.lblNumero, "lblNumero");
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(19, 13);
-            this.lblNumero.TabIndex = 4;
-            this.lblNumero.Text = "N°";
             this.lblNumero.Click += new System.EventHandler(this.lblNumero_Click);
             // 
             // lblBairro
             // 
-            this.lblBairro.AutoSize = true;
-            this.lblBairro.Location = new System.Drawing.Point(502, 154);
+            resources.ApplyResources(this.lblBairro, "lblBairro");
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(37, 13);
-            this.lblBairro.TabIndex = 5;
-            this.lblBairro.Text = "Bairro:";
             this.lblBairro.Click += new System.EventHandler(this.lblBairro_Click);
             // 
             // lblCep
             // 
-            this.lblCep.AutoSize = true;
-            this.lblCep.Location = new System.Drawing.Point(21, 195);
+            resources.ApplyResources(this.lblCep, "lblCep");
             this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(31, 13);
-            this.lblCep.TabIndex = 6;
-            this.lblCep.Text = "CEP:";
             this.lblCep.Click += new System.EventHandler(this.lblCep_Click);
             // 
             // lblContato
             // 
-            this.lblContato.AutoSize = true;
-            this.lblContato.Location = new System.Drawing.Point(20, 245);
+            resources.ApplyResources(this.lblContato, "lblContato");
             this.lblContato.Name = "lblContato";
-            this.lblContato.Size = new System.Drawing.Size(52, 13);
-            this.lblContato.TabIndex = 7;
-            this.lblContato.Text = "Telefone:";
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(233, 245);
+            resources.ApplyResources(this.lblEmail, "lblEmail");
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(38, 13);
-            this.lblEmail.TabIndex = 8;
-            this.lblEmail.Text = "E-mail:";
             // 
             // txtNFantsaia
             // 
-            this.txtNFantsaia.Location = new System.Drawing.Point(107, 100);
+            resources.ApplyResources(this.txtNFantsaia, "txtNFantsaia");
             this.txtNFantsaia.Name = "txtNFantsaia";
-            this.txtNFantsaia.Size = new System.Drawing.Size(367, 20);
-            this.txtNFantsaia.TabIndex = 10;
             // 
             // txtRSocial
             // 
-            this.txtRSocial.Location = new System.Drawing.Point(329, 52);
+            resources.ApplyResources(this.txtRSocial, "txtRSocial");
             this.txtRSocial.Name = "txtRSocial";
-            this.txtRSocial.Size = new System.Drawing.Size(375, 20);
-            this.txtRSocial.TabIndex = 11;
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(82, 151);
+            resources.ApplyResources(this.txtEndereco, "txtEndereco");
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(300, 20);
-            this.txtEndereco.TabIndex = 12;
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(424, 151);
+            resources.ApplyResources(this.txtNumero, "txtNumero");
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(61, 20);
-            this.txtNumero.TabIndex = 13;
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(545, 151);
+            resources.ApplyResources(this.txtBairro, "txtBairro");
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(100, 20);
-            this.txtBairro.TabIndex = 14;
             // 
             // txtEmail
             // 
             this.txtEmail.BackColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(277, 242);
+            resources.ApplyResources(this.txtEmail, "txtEmail");
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(353, 20);
-            this.txtEmail.TabIndex = 17;
+            this.txtEmail.Validated += new System.EventHandler(this.txtEmail_Validated);
             // 
             // rbtnInformacoes
             // 
-            this.rbtnInformacoes.AutoSize = true;
-            this.rbtnInformacoes.Location = new System.Drawing.Point(24, 351);
+            resources.ApplyResources(this.rbtnInformacoes, "rbtnInformacoes");
             this.rbtnInformacoes.Name = "rbtnInformacoes";
-            this.rbtnInformacoes.Size = new System.Drawing.Size(316, 17);
-            this.rbtnInformacoes.TabIndex = 18;
             this.rbtnInformacoes.TabStop = true;
-            this.rbtnInformacoes.Text = "Confirmo que as informações declaras acima são verdadeiras.";
             this.rbtnInformacoes.UseVisualStyleBackColor = true;
             this.rbtnInformacoes.CheckedChanged += new System.EventHandler(this.rbtnInformacoes_CheckedChanged);
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.AutoSize = true;
+            resources.ApplyResources(this.btnCadastrar, "btnCadastrar");
             this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Location = new System.Drawing.Point(643, 341);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(103, 36);
-            this.btnCadastrar.TabIndex = 19;
-            this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(185, 195);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 13);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "UF:";
             // 
             // cbUF
             // 
             this.cbUF.FormattingEnabled = true;
             this.cbUF.Items.AddRange(new object[] {
-            "AC",
-            "AL",
-            "AP",
-            "AM",
-            "BA",
-            "CE",
-            "ES",
-            "GO",
-            "MA",
-            "MT",
-            "MS",
-            "MG",
-            "PA",
-            "PB",
-            "PR",
-            "PE",
-            "PI",
-            "RJ",
-            "RN",
-            "RS",
-            "RO",
-            "RR",
-            "SC",
-            "SP",
-            "SE",
-            "TO",
-            "DF"});
-            this.cbUF.Location = new System.Drawing.Point(215, 191);
+            resources.GetString("cbUF.Items"),
+            resources.GetString("cbUF.Items1"),
+            resources.GetString("cbUF.Items2"),
+            resources.GetString("cbUF.Items3"),
+            resources.GetString("cbUF.Items4"),
+            resources.GetString("cbUF.Items5"),
+            resources.GetString("cbUF.Items6"),
+            resources.GetString("cbUF.Items7"),
+            resources.GetString("cbUF.Items8"),
+            resources.GetString("cbUF.Items9"),
+            resources.GetString("cbUF.Items10"),
+            resources.GetString("cbUF.Items11"),
+            resources.GetString("cbUF.Items12"),
+            resources.GetString("cbUF.Items13"),
+            resources.GetString("cbUF.Items14"),
+            resources.GetString("cbUF.Items15"),
+            resources.GetString("cbUF.Items16"),
+            resources.GetString("cbUF.Items17"),
+            resources.GetString("cbUF.Items18"),
+            resources.GetString("cbUF.Items19"),
+            resources.GetString("cbUF.Items20"),
+            resources.GetString("cbUF.Items21"),
+            resources.GetString("cbUF.Items22"),
+            resources.GetString("cbUF.Items23"),
+            resources.GetString("cbUF.Items24"),
+            resources.GetString("cbUF.Items25"),
+            resources.GetString("cbUF.Items26")});
+            resources.ApplyResources(this.cbUF, "cbUF");
             this.cbUF.Name = "cbUF";
-            this.cbUF.Size = new System.Drawing.Size(44, 21);
-            this.cbUF.TabIndex = 21;
             this.cbUF.SelectedIndexChanged += new System.EventHandler(this.cbUF_SelectedIndexChanged);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(20, 9);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 24);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Preencha os dados:";
             // 
             // mskTelefone
             // 
-            this.mskTelefone.Location = new System.Drawing.Point(78, 242);
-            this.mskTelefone.Mask = "(00)00000-0000    ";
+            resources.ApplyResources(this.mskTelefone, "mskTelefone");
             this.mskTelefone.Name = "mskTelefone";
-            this.mskTelefone.Size = new System.Drawing.Size(100, 20);
-            this.mskTelefone.TabIndex = 23;
             this.mskTelefone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // mskCNPJ
             // 
-            this.mskCNPJ.Location = new System.Drawing.Point(64, 52);
-            this.mskCNPJ.Mask = "00.000.000/0000-00";
+            resources.ApplyResources(this.mskCNPJ, "mskCNPJ");
             this.mskCNPJ.Name = "mskCNPJ";
-            this.mskCNPJ.Size = new System.Drawing.Size(159, 20);
-            this.mskCNPJ.TabIndex = 24;
             this.mskCNPJ.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // mskCEP
             // 
-            this.mskCEP.Location = new System.Drawing.Point(58, 191);
-            this.mskCEP.Mask = "00.000-000";
+            resources.ApplyResources(this.mskCEP, "mskCEP");
             this.mskCEP.Name = "mskCEP";
-            this.mskCEP.Size = new System.Drawing.Size(100, 20);
-            this.mskCEP.TabIndex = 25;
             this.mskCEP.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 298);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Senha:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(237, 298);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 13);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Confirmar senha:";
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(64, 295);
+            resources.ApplyResources(this.txtSenha, "txtSenha");
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(145, 20);
-            this.txtSenha.TabIndex = 25;
-            this.txtSenha.UseSystemPasswordChar = true;
+            this.txtSenha.UseWaitCursor = true;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // txtConfirmarSenha
             // 
-            this.txtConfirmarSenha.Location = new System.Drawing.Point(329, 295);
+            resources.ApplyResources(this.txtConfirmarSenha, "txtConfirmarSenha");
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
-            this.txtConfirmarSenha.Size = new System.Drawing.Size(154, 20);
-            this.txtConfirmarSenha.TabIndex = 25;
-            this.txtConfirmarSenha.UseSystemPasswordChar = true;
+            // 
+            // pbCSenha
+            // 
+            resources.ApplyResources(this.pbCSenha, "pbCSenha");
+            this.pbCSenha.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.view;
+            this.pbCSenha.Name = "pbCSenha";
+            this.pbCSenha.TabStop = false;
+            this.pbCSenha.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // pbCSenha2
+            // 
+            resources.ApplyResources(this.pbCSenha2, "pbCSenha2");
+            this.pbCSenha2.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.view;
+            this.pbCSenha2.Name = "pbCSenha2";
+            this.pbCSenha2.TabStop = false;
+            this.pbCSenha2.Click += new System.EventHandler(this.pictureBox1_Click_2);
             // 
             // frmCadastroCNPJ
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(758, 389);
+            this.Controls.Add(this.pbCSenha2);
+            this.Controls.Add(this.pbCSenha);
             this.Controls.Add(this.txtConfirmarSenha);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.label4);
@@ -360,8 +294,9 @@
             this.Controls.Add(this.lblRazaoSocial);
             this.Controls.Add(this.lblCNPJ);
             this.Name = "frmCadastroCNPJ";
-            this.Text = "frmCadastroCNPJ";
             this.Load += new System.EventHandler(this.frmCadastroCNPJ_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbCSenha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCSenha2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -394,7 +329,9 @@
         private System.Windows.Forms.MaskedTextBox mskCEP;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtConfirmarSenha;
+        private System.Windows.Forms.PictureBox pbCSenha;
+        private System.Windows.Forms.PictureBox pbCSenha2;
+        private System.Windows.Forms.TextBox txtSenha;
     }
 }
