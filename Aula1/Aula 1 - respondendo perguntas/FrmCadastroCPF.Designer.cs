@@ -59,6 +59,10 @@
             this.txtCSenha = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.mskNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.pbSenha = new System.Windows.Forms.PictureBox();
+            this.pbConfirmarSenha = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSenha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbConfirmarSenha)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -231,6 +235,8 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(249, 21);
             this.txtEmail.TabIndex = 21;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
+            this.txtEmail.Validated += new System.EventHandler(this.txtEmail_Validated);
             // 
             // txtBairro
             // 
@@ -278,13 +284,15 @@
             // 
             // cmbBxSexo
             // 
+            this.cmbBxSexo.BackColor = System.Drawing.SystemColors.Window;
+            this.cmbBxSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBxSexo.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBxSexo.FormattingEnabled = true;
             this.cmbBxSexo.Items.AddRange(new object[] {
             "Feminino",
             "Masculino",
             "Outro"});
-            this.cmbBxSexo.Location = new System.Drawing.Point(378, 105);
+            this.cmbBxSexo.Location = new System.Drawing.Point(378, 106);
             this.cmbBxSexo.Name = "cmbBxSexo";
             this.cmbBxSexo.Size = new System.Drawing.Size(97, 22);
             this.cmbBxSexo.TabIndex = 29;
@@ -368,12 +376,34 @@
             this.mskNascimento.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mskNascimento.ValidatingType = typeof(System.DateTime);
             // 
+            // pbSenha
+            // 
+            this.pbSenha.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.view;
+            this.pbSenha.Location = new System.Drawing.Point(223, 366);
+            this.pbSenha.Name = "pbSenha";
+            this.pbSenha.Size = new System.Drawing.Size(20, 20);
+            this.pbSenha.TabIndex = 38;
+            this.pbSenha.TabStop = false;
+            this.pbSenha.Click += new System.EventHandler(this.pbSenha_Click);
+            // 
+            // pbConfirmarSenha
+            // 
+            this.pbConfirmarSenha.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.view;
+            this.pbConfirmarSenha.Location = new System.Drawing.Point(610, 366);
+            this.pbConfirmarSenha.Name = "pbConfirmarSenha";
+            this.pbConfirmarSenha.Size = new System.Drawing.Size(20, 20);
+            this.pbConfirmarSenha.TabIndex = 39;
+            this.pbConfirmarSenha.TabStop = false;
+            this.pbConfirmarSenha.Click += new System.EventHandler(this.pbConfirmarSenha_Click);
+            // 
             // frmCadastroCPF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(760, 475);
+            this.Controls.Add(this.pbConfirmarSenha);
+            this.Controls.Add(this.pbSenha);
             this.Controls.Add(this.mskNascimento);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtCSenha);
@@ -405,8 +435,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "frmCadastroCPF";
-            this.Text = "FrmCadastroCPF";
+            this.Text = " ";
+            ((System.ComponentModel.ISupportInitialize)(this.pbSenha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbConfirmarSenha)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,7 +476,9 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtCSenha;
-        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.MaskedTextBox mskNascimento;
+        private System.Windows.Forms.PictureBox pbSenha;
+        private System.Windows.Forms.PictureBox pbConfirmarSenha;
+        private System.Windows.Forms.TextBox txtSenha;
     }
 }
