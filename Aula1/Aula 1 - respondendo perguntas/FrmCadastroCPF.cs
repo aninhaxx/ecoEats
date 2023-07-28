@@ -198,7 +198,7 @@ namespace Aula_1___respondendo_perguntas
             {
                 txtSenha.PasswordChar = '\0'; 
                 pbSenha.Image = Image.FromFile(@"..\..\Imagens\view.png");
-                txtSenha.UseSystemPasswordChar = true;
+                txtSenha.UseSystemPasswordChar = false;
             }
             else
             {
@@ -216,7 +216,7 @@ namespace Aula_1___respondendo_perguntas
             {
                 txtCSenha.PasswordChar = '\0'; 
                 pbConfirmarSenha.Image = Image.FromFile(@"..\..\Imagens\view.png");
-                txtCSenha.UseSystemPasswordChar= true;
+                txtCSenha.UseSystemPasswordChar = false;
             }
             else
             {

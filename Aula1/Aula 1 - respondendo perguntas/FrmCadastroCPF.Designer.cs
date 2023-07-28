@@ -256,11 +256,11 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.White;
-            this.btnCadastrar.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
+            this.btnCadastrar.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnCadastrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
+            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
             this.btnCadastrar.Location = new System.Drawing.Point(652, 433);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(96, 30);
@@ -353,18 +353,18 @@
             this.txtCSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCSenha.Location = new System.Drawing.Point(446, 366);
             this.txtCSenha.Name = "txtCSenha";
+            this.txtCSenha.PasswordChar = '*';
             this.txtCSenha.Size = new System.Drawing.Size(154, 20);
             this.txtCSenha.TabIndex = 29;
-            this.txtCSenha.UseSystemPasswordChar = true;
             // 
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(63, 366);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(154, 20);
             this.txtSenha.TabIndex = 29;
-            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // mskNascimento
             // 
@@ -378,7 +378,7 @@
             // 
             // pbSenha
             // 
-            this.pbSenha.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.view;
+            this.pbSenha.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.hide;
             this.pbSenha.Location = new System.Drawing.Point(223, 366);
             this.pbSenha.Name = "pbSenha";
             this.pbSenha.Size = new System.Drawing.Size(20, 20);
@@ -388,7 +388,7 @@
             // 
             // pbConfirmarSenha
             // 
-            this.pbConfirmarSenha.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.view;
+            this.pbConfirmarSenha.Image = global::Aula_1___respondendo_perguntas.Properties.Resources.hide;
             this.pbConfirmarSenha.Location = new System.Drawing.Point(610, 366);
             this.pbConfirmarSenha.Name = "pbConfirmarSenha";
             this.pbConfirmarSenha.Size = new System.Drawing.Size(20, 20);

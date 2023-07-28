@@ -16,7 +16,7 @@ namespace Aula_1___respondendo_perguntas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadastroCPF());
+            Application.Run(new frmPrincipal());
         }
     }
 }
