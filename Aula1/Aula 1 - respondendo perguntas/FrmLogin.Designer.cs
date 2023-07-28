@@ -85,7 +85,6 @@
             this.label3.Size = new System.Drawing.Size(84, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "SENHA:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtCPF_CNPJ
             // 
@@ -150,16 +149,15 @@
             this.panel1.Size = new System.Drawing.Size(1054, 583);
             this.panel1.TabIndex = 9;
             // 
-            // FrmLogin
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(1054, 583);
             this.Controls.Add(this.panel1);
-            this.Name = "FrmLogin";
+            this.Name = "frmLogin";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picMostrarEsconder)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

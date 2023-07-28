@@ -16,24 +16,11 @@ namespace Aula_1___respondendo_perguntas
         {
             InitializeComponent();
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-    
-
         private void btnRedefinirSenha_Click(object sender, EventArgs e)
         {
             // Redireciona para a tela da ana
             MessageBox.Show("Tela em construção!");
 
-        }
-
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-          
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
