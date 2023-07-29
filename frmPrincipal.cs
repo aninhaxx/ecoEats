@@ -111,7 +111,7 @@ namespace Aula_1___respondendo_perguntas
 
         private void btnAnaC_Click(object sender, EventArgs e)
         {
-            Form frmAnaC = new frmAlterarInfo();
+            Form frmAnaC = new frmAlterarInfo2();
             frmAnaC.WindowState = FormWindowState.Normal;
             frmAnaC.Show();
 

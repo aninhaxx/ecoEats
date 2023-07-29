@@ -10,24 +10,37 @@ using System.Windows.Forms;
 
 namespace Aula_1___respondendo_perguntas
 {
-    public partial class frmAlterarInfo : Form
+    public partial class frmAlterarInfo2 : Form
     {
-        public frmAlterarInfo()
+        public frmAlterarInfo2()
         {
             InitializeComponent();
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            string confirmação = "";
-            if (rbtnEmail.Checked == true)
-            {
-                confirmação = "Email";
+            string senha1 = txtNsenha.Text;
+            string senha2 = txtRsenha.Text;
+            bool senhasConferem = (senha1 == senha2);
 
+            if (senhasConferem)
+            {
+                string confirmação = "";
+
+                if (rbtnEmail.Checked)
+                {
+                    confirmação = "Email";
+                    MessageBox.Show("Código de verificação enviado por email");
+                }
+                else
+                {
+                    confirmação = "celular";
+                    MessageBox.Show("Número de verificação enviado por SMS");
+                }
             }
             else
             {
-                confirmação = "celular";
+                MessageBox.Show("As senhas não conferem");
             }
 
             string email = lblEmail.Text;
@@ -37,19 +50,6 @@ namespace Aula_1___respondendo_perguntas
             string recuperasenha = lblRsenha.Text;
 
             string confirmasenha = lblConfirm.Text;
-
-           MessageBox.Show("Número de vericação enviado por email");
-            if (rbtnEmail.Checked == true)
-            {
-                confirmação = "Email";
-            }
-            else MessageBox.Show("Número de verificação enviado por SMS");
-            {
-                confirmação = "Celular";
-
-            }
-
-
         }
 
           private void txtEmail_TextChanged(object sender, EventArgs e)
@@ -75,6 +75,26 @@ namespace Aula_1___respondendo_perguntas
         private void txtNsenha_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void frmAlterarInfo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtRsenha_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void rbtnEmail_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtnCelular_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
